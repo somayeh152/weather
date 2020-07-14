@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/asset/font/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("/asset/font/Roboto-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/asset/font/Roboto-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("/asset/font/Roboto-Light.ttf") format("ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto-Medium', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+
+#titleHolder {
+    text-align: center;
+}
+
+#titleHolder h1 {
+    font-size: 28px;
+}
+
+#info {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#info h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info form input[type='text'] {
+    width: 180px;
+    height: 35px;
+    line-height: 1;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+#info form button {
+    font-size: 16px;
+    width: 180px;
+    height: 35px;
+    line-height: 0.2px;
+    border-radius: 20px;
+}
+
+#defaultInfo {
+    display: none;
+    justify-content: center;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    margin-top: 60px;
+}
+
+#cityName {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #878787;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#description {
+    display: block;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #878787;
+    margin-top: -5px;
+}
+
+#weatherIcon {
+    min-width: 80px;
+    min-height: 80px;
+}
+
+#temp {
+    text-align: center;
+}
+
+#temp_api {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+#sel {
+    width: 150px;
+    height: 33px;
+    font-size: 14px;
+    padding: 5px 0;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 425px) {
+
+    #info form input[type='text'],
+    #info form button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: 20%;
+    }
+
+    .col-md-4 {
+        width: 14%;
+    }
+}
