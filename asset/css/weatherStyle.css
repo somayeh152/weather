@@ -72,6 +72,10 @@ body {
     margin-top: 60px;
 }
 
+#weatherInfo{
+    text-align: center;
+}
+
 #cityName {
     font-size: 32px;
     font-weight: lighter;
@@ -91,6 +95,7 @@ body {
 #weatherIcon {
     min-width: 80px;
     min-height: 80px;
+    display: inline;
 }
 
 #temp {
@@ -112,6 +117,23 @@ body {
     margin: auto;
 }
 
+#weatherInfoTable{
+    text-align: center;
+}
+
+
+/* @media screen and (min-width: 768px) {
+    .col-md-4 {
+        width: 14%;
+    }
+} */
+
+@media screen and (max-width: 767px) {
+    #info form input[type='text'] {
+        margin: auto;
+        width: 80%;
+    }
+}
 
 @media screen and (max-width: 425px) {
 
@@ -119,15 +141,12 @@ body {
     #info form button {
         width: 100%;
     }
-}
 
-
-@media (min-width: 768px) {
-    .col-md-6 {
-        width: 20%;
+    #defaultInfo {
+        flex-wrap: wrap;
     }
 
-    .col-md-4 {
-        width: 14%;
+    #temp {
+        margin-bottom: 30px;
     }
 }
