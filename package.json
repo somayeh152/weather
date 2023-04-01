@@ -2,7 +2,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "bootstrap-rtl": "^3.3.4",
-    "jquery": "^3.3.1"
+    "jquery": "^3.5.0"
   },
   "name": "testsomaye",
   "version": "1.0.0",
